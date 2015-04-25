@@ -1,3 +1,9 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 body {
 	font-size: 1em;
 	font-family: arial, sans-serif;
@@ -15,18 +21,18 @@ h1, h2, h3, h4 {
 	margin: 0;
 }
 
-p.intro {
-	font-size: 1em;
+.container h1 {
+	white-space: nowrap;
 }
-
-p {font-size: 3em;}
-
-.aa-large {
-  display: block;
+.container {
+	width: 80%;
+	max-width: 1600px;
+	margin: 3em auto;
+	padding: 1em;
 }
-
-.aa-small {
-  display: none;
+.container p {
+	line-height: 1.6em;
+	text-align: left;
 }
 
 footer {
@@ -39,10 +45,4 @@ footer p {
 
 @media only screen and (min-width: 800px) {
 
-.aa-large {
-  display: none;
-}
-.aa-small {
-  display: block;
-	}
 }

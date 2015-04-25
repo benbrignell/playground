@@ -11,29 +11,27 @@
 
 <header>
 	<h1>Fittext demo</h1>
-	<h4>Scale text size to fluid containers</h4>
+	<h4>Flexible font sizes. Scale text size to fluid containers.</h4>
 	<p class="intro">Resize your browser to see the demo</p>
 </header>
-	<!-- potential container for appendAround -->
-  <div class="aa-large" data-set="swapme"></div>
-		<p><strong>First</strong> item</p>
-	</div>
 
-  <!-- initial container for appendAround -->
- 	<div class="aa-small" data-set="swapme">
-		<p class="swap"><strong>Second</strong> item</p>
-	</div>
+<div class="container">
+	<h1 id="responsive_headline">Your squishy heading</h1>
+	<p>Your body text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis leo at purus posuere condimentum. Sed viverra massa sed mi congue, at euismod risus egestas. Quisque ante nibh, lobortis a leo in, iaculis aliquam lorem. Nullam dui enim, ullamcorper vel magna in, rutrum cursus leo. Aenean auctor tellus dolor, ultricies sodales enim feugiat nec. Phasellus eu felis interdum purus feugiat pharetra eleifend sit amet arcu. Duis sem tellus, efficitur sit amet dolor ac, tristique tristique turpis.</p>
+</div>
+
 
 	<footer>
 		<p><a href="https://github.com/adactio/FitText.js">Fittext on github</a></p>
 		<p><a href="https://twitter.com/benbrignell">Demo by Ben Brignell</a></p>
 		<p><a href="http://benbrignell.com">Home</a></p>
 	</footer>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="js/appendAround.js"></script>
 
-	<script type="text/javascript">
-	    $( ".swap" ).appendAround();
+	<script src="js/fittext.js"></script>
+
+	<script>
+		window.fitText( document.getElementById("responsive_headline") );
 	</script>
+
 </body>
 </html>
